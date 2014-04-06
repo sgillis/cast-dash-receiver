@@ -31,7 +31,7 @@
         window.connectedCastSenders = []; // {senderId:'', channel:obj}
 
         function setHudMessage(elementId, message) {
-            $('#'+elementId).html('' + JSON.stringify(message));
+            document.getElementById('messageBusMessage').innerHTML = "" + message.data;
         }
 
         window.onload = function() {
