@@ -20,8 +20,7 @@
     </style>
 </head>
 <body>
-    <div id="circle1" class="circleBase type3"></div>
-    <div id="circle2" class="circleBase type3"></div>
+    <span id='messageBusMessage'>Nothing here</span>
 
     <script type="text/javascript">
         "use strict";
@@ -29,6 +28,10 @@
         window.castReceiverManager = null;
         window.messageBus = null;
         window.connectedCastSenders = []; // {senderId:'', channel:obj}
+
+        function setHudMessage(elementId, message) {
+            $('#'+elementId).html('' + JSON.stringify(message));
+        }
 
         window.onload = function() {
             /**
