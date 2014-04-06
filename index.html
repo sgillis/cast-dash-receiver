@@ -74,8 +74,8 @@
         window.messageBus = null;
         window.connectedCastSenders = []; // {senderId:'', channel:obj}
 
-        function setHudMessage(elementId, message) {
-            document.getElementById('messageBusMessage').innerHTML = "" + message.data;
+        function setMessage(message) {
+            document.getElementById('message').innerHTML = "" + message;
         }
 
         window.onload = function() {
@@ -206,7 +206,7 @@
              **/
             window.messageBus.onMessage = function(event) {
                 console.log("### Message Bus - Media Message: " + JSON.stringify(event));
-                setHudMessage('messageBusMessage', event);
+                setMessage(event.data);
 
                 console.log("### CUSTOM MESSAGE: " + JSON.stringify(event));
                 // show/hide messages
