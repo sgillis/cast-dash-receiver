@@ -16,12 +16,56 @@
     <style>
         body {
             overflow: hidden;
-            background: #FFFFFF;
+            background: #000 url("//dtp3gcgltbwvl.cloudfront.net/vikingpl/img/bg-campaign-page.jpg") no-repeat center top fixed !important;
+            background-size: cover !important;
         }
     </style>
+    <link rel="stylesheet" href="core.css" />
 </head>
-<body>
-    <span id='messageBusMessage'>Nothing here</span>
+<body class="campaign-page counter">
+    <!-- header -->
+    <header class="main">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- logo -->
+            <a href="//mobilevikings.be" class="logo">
+                <img src="//dhx7ttmzsk5s.cloudfront.net/4313ac7d36/vikingpl/img/en/mobile-vikings.png" alt="Mobile Vikings" width="124" height="130"/>
+            </a>
+
+            <!-- tagline -->
+            <div class="tagline">
+                <span class="line2">Mobile Internet is a right</span>
+            </div>
+            <!-- /tagline -->
+
+        </div>
+        <!-- /container -->
+
+    </header>
+    <!-- /header -->
+
+    <div class="campaign-content container">
+        <div class="inner-content">
+            <div class="circle-box">
+                <h1>Total</h1>
+                <div class="circle">
+                    <h2 id="counter-total">3598</h2>
+                    <span id="counter-codes" class="more-numbers">2451 codes used</span>
+                </div>
+            </div>
+            <div class="circle-box">
+                <h1>Today</h1>
+                <div class="circle">
+                    <h2 id="counter-today">6</h2>
+                    <span id="counter-yesterday" class="more-numbers">11 yesterday</span>
+                </div>
+            </div>
+        </div>
+        <div class="happy-msg"><div id='message'>Hello fellow Vikings!</div></div>
+    </div>
+
 
     <script type="text/javascript">
         "use strict";
